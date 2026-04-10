@@ -246,14 +246,6 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-.separator {
-    width: 60px;
-    height: 4px;
-    background-color: var(--violet);
-    margin: 0 auto 40px;
-    border-radius: 10px;
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -328,4 +320,180 @@ footer a:hover {
 
 .links a:hover {
     color: var(--violet);
+}
+
+.contact-container {
+    display: flex;             
+    justify-content: space-around; 
+    align-items: flex-start;    
+    padding: 50px 10%;        
+    gap: 40px;                 
+    flex-wrap: wrap;          
+}
+
+.contact-info, .contact-form {
+    flex: 1;                   
+    min-width: 300px;          
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-whatsapp { background-color: #25D366; color: white; padding: 10px; border-radius: 5px; text-decoration: none; }
+.btn-telegram { background-color: #0088cc; color: white; padding: 10px; border-radius: 5px; text-decoration: none; }
+
+/* Style de la section Passions */
+.passions-header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.passions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.passion-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; 
+}
+
+.passion-card:hover {
+    transform: translateY(-10px); 
+}
+
+.passion-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.passion-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.passion-content h3 {
+    color: #3498db; 
+    margin-bottom: 10px;
+}
+
+.passion-content p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.entertainment-page {
+    padding: 60px 5%;
+    background-color: #f4f7f6;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grille Professionnelle */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.media-card {
+    position: relative;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.media-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 90%);
+    z-index: 1;
+}
+
+.media-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    color: white;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.category {
+    background: #3498db;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.media-info h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.media-info p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+.media-card:hover img {
+    transform: scale(1.1); 
+}
+
+.media-card:hover .media-info {
+    transform: translateY(-10px); 
 }
